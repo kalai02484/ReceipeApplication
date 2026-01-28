@@ -2,7 +2,7 @@ import React from "react";
 import { TextInput } from "flowbite-react";
 import { HiSearch } from "react-icons/hi";
 
-const SearchBar = () => {
+const SearchBar = ({onSearch}) => {
   return (
     <div>
       <input
@@ -11,6 +11,7 @@ const SearchBar = () => {
         placeholder="Search Receipes..."
         required
         className="w-full md:w-96 lg:w-4xl rounded-full mx-auto py-4 bg-amber-50 px-6 text-gray-900 focus:ring-2 focus:ring-amber-400 focus:outline-none"
+        onChange={(e) => onSearch(e.target.value)}
       />
       <button
         type="submit"
