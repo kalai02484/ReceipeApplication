@@ -7,7 +7,7 @@ import {
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
-import { FloatingLabel } from "flowbite-react";
+import { Link } from "react-router-dom";
 import { FcHome, FcLike } from "react-icons/fc";
 
 const TopNavbar = () => {
@@ -25,10 +25,8 @@ const TopNavbar = () => {
           <NavbarToggle />
         </div>
         <NavbarCollapse>
-          <NavbarLink href="#" className="mr-4 hover:text-amber-600">
-           <FcHome className="mr-2 text-xl inline align-bottom"/> Home
-          </NavbarLink>
-          <NavbarLink href="#" className="hover:text-amber-600"><FcLike className="mr-2 text-xl inline align-bottom"/>Favorites</NavbarLink>
+          <Link to="/"><FcHome className="mr-2 text-xl inline align-bottom"/> Home</Link>
+          <Link to="favorites"><FcLike className="mr-2 text-xl inline align-bottom"/>Favorites</Link>
         </NavbarCollapse>
       </Navbar>
     </div>
