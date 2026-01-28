@@ -12,7 +12,7 @@ import { FcHome, FcLike } from "react-icons/fc";
 
 const TopNavbar = () => {
   return (
-    <div className="w-full border-b-2 border-amber-500">
+    <div className="w-full border-b-2 border-amber-500 sticky top-0 bg-white z-50">
       <Navbar
         fluid
         rounded
