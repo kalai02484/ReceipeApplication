@@ -1,10 +1,11 @@
 import React from 'react'
+import { Alert } from "flowbite-react";
 
 const Home = () => {
   return (
-    <div>
-      Home Page
-    </div>
+    <Alert color="info">
+      <span className="font-medium">Info alert!</span> Change a few things up and try submitting again.
+    </Alert>
   )
 }
 
